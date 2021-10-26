@@ -1,5 +1,21 @@
-create database Vesolovskyi;
+create database if not exists Vesolovskyi;
 use Vesolovskyi;
+
+drop table if exists delivery_has_courier;
+drop table if exists client_has_delivery;
+drop table if exists courier;
+drop table if exists client;
+drop table if exists city;
+drop table if exists street;
+drop table if exists delivery;
+drop table if exists address;
+drop table if exists salad;
+drop table if exists drink;
+drop table if exists pizza;
+drop table if exists pizza_composition;
+drop table if exists additives_for_pizza;
+
+
 
 
 create table pizza_composition
