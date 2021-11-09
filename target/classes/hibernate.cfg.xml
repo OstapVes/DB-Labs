@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/vesolovskyi</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">1111</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <mapping class="com.vesolovskyi.model.entities.DeliveryEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.AdditivesForPizzaEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.AddressEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.CityEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.ClientEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.ClientHasDeliveryEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.CourierEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.DeliveryHasCourierEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.DrinkEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.PizzaCompositionEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.PizzaEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.SaladEntity"/>
+        <mapping class="com.vesolovskyi.model.entities.StreetEntity"/>
+
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
