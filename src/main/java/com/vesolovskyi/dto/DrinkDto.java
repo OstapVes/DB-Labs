@@ -1,0 +1,18 @@
+package com.vesolovskyi.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class DrinkDto {
+    private Integer id;
+    private String name;
+    private String size;
+    private Integer price;
+    private Integer callories;
+}
